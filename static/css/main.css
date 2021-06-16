@@ -2,6 +2,7 @@
 
 body{
     background-color: #ebeff5;
+    height: 100%;
 }
 
 
@@ -16,4 +17,8 @@ body{
 
 #orders-pending{
     background-color: #7CD1C0;
+}
+
+#delete{
+    margin-right: 2cm;
 }
