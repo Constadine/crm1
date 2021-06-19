@@ -44,13 +44,13 @@
     <div class="col">
         <div class="card card-body">
             <form method="get">
-
+                {{ myFilter.form }}
                 <button class="btn btn-info" type="submit">Search</button>
             </form>
         </div>
     </div>
-
 </div>
+
 <br>
 
 <div class="row">
@@ -59,7 +59,7 @@
             <table class="table table-sm">
                 <tr>
                     <th>Product</th>
-                    <th>Category</th>
+                    <th>Note</th>
                     <th>Date Ordered</th>
                     <th>Status</th>
                     <th>Update</th>
@@ -71,7 +71,7 @@
                 <tr>
 
                     <td>{{ order.product.name }}</td>
-                    <td>{{ order.product.category }}</td>
+                    <td>{{ order.note }}</td>
                     <td>{{ order.date_created }}</td>
                     <td>{{ order.status }}</td>
                     <td><a class='btn btn-sm btn-primary' href="{% url 'update_order' order.id %}">Update</a></td>
